@@ -51,32 +51,32 @@ The application follows a **Layered Architecture** with the following layers:
 3. **Visual Studio 2022 or VS Code**.
 4. **Postman** (Optional, for testing the API endpoints).
    
-## API Endpoints
-The API exposes the following endpoints to manage tasks. You can explore these endpoints in **Swagger**.
+### API Documentation
 
-### GET /api/TaskManagement/GetAllTasks
-- **Description**: Retrieves all tasks.
-- **Response**: A list of tasks.
+TechWrite exposes several API endpoints for interacting with blog posts, user authentication, and validation. Below is the list of available API endpoints.
 
-### GET /api/TaskManagement/GetTaskDetails/{taskItemId}
-- **Description**: Retrieves a task by its ID.
-- **Response**: Task details for the given ID.
+### Blog Endpoints
 
-### POST /api/TaskManagement/CreateNewTaskItem
-- **Description**: Creates a new task.
-- **Request Body**: JSON object containing task name, description, and deadline.
-- **Response**: Created task details.
-
-### PUT /api/TaskManagement/UpdateTaskDetails/{id}
-- **Description**: Updates an existing task by ID.
-- **Request Body**: JSON object with updated task information.
-- **Response**: Updated task details.
-
-### DELETE /api/TaskManagement/TaskManagement{id}
-- **Description**: Deletes a task by ID.
-- **Response**: Success message or error message.
-
-You can access and test these endpoints using **Swagger UI**, which is available when the backend API is running.
+#### **GET** `/api/BlogApi/Get`
+- **Description**: Retrieves all blog details.
+- **Response**: A list of blog posts.
+  ```json
+  [
+    {
+      "id": 1,
+      "title": "First Blog Post",
+      "content": "Content of the first blog post.",
+      "author": "user@example.com",
+      "status": "Approved"
+    },
+    {
+      "id": 2,
+      "title": "Second Blog Post",
+      "content": "Content of the second blog post.",
+      "author": "admin@example.com",
+      "status": "Pending"
+    }
+  ]
 
 ## Setup Instructions
 
