@@ -67,7 +67,7 @@ Clone the repository to your local machine using Git:
 git clone https://github.com/yourusername/techwrite.git
 cd techwrite
 
-## API Documentation
+### API Documentation
 
 TechWrite exposes several API endpoints for interacting with blog posts, user authentication, and validation. Below is the list of available API endpoints.
 
