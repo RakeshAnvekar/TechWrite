@@ -34,7 +34,6 @@ The application uses the **Repository Pattern** for data access and **Dependency
 - **User Authentication**: Secure user login using JWT Tokens.
 - **CRUD Operations**: Create, Read, Update, and Delete blog posts.
 - **Role-Based Access Control**: Only authorized users (Admin, User) can create or edit posts.
-                                 Admin page to approve and reject the blog before blog golive.
 - **Fluent Validation**: Ensures all input data is validated before processing.
 - **Error Handling**: Custom error handling with appropriate HTTP status codes.
 - **Secure Data Storage**: Uses encryption and hashing for storing sensitive data (like passwords).
@@ -44,7 +43,7 @@ The application uses the **Repository Pattern** for data access and **Dependency
 The application follows a **Layered Architecture** with the following layers:
 1. **Presentation Layer** (MVC Controllers and Views): Handles HTTP requests, user interface logic, and returns responses.
 2. **Business Logic Layer**: Contains the core business logic, operations on data, and validation.
-3. **Repository Layer**: Uses **Entity Framework Core** and the **Repository Design Pattern** to abstract database operations.
+3. **Data Access Layer**: Uses **Entity Framework Core** and the **Repository Design Pattern** to abstract database operations.
 4. **API Layer**: Handles the interactions with the front-end and exposes API endpoints for operations like creating or fetching blog posts.
 
 ### Dependency Injection & Repository Pattern
@@ -65,5 +64,5 @@ To get started with **TechWrite**, follow these steps:
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/RakeshAnvekar/TechWrite.git
+git clone https://github.com/yourusername/techwrite.git
 cd techwrite
