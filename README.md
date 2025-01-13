@@ -61,22 +61,35 @@ TechWrite exposes several API endpoints for interacting with blog posts, user au
 - **Description**: Retrieves all blog details.
 - **Response**: A list of blog posts.
   ```json
-  [
-    {
-      "id": 1,
-      "title": "First Blog Post",
-      "content": "Content of the first blog post.",
-      "author": "user@example.com",
-      "status": "Approved"
-    },
-    {
-      "id": 2,
-      "title": "Second Blog Post",
-      "content": "Content of the second blog post.",
-      "author": "admin@example.com",
-      "status": "Pending"
-    }
-  ]
+  "blogs": [
+        {
+            "blogId": 25,
+            "title": "Mastering Modern Web Development: A Comprehensive Guide for Programmers",
+            "description": "GraphQL. Learn how to create responsive, scalable, and efficient web applications, and discover tips for staying ahead in the ever-evolving ",
+            "isActive": true,
+            "userId": "65f7b244-67e5-45e3-ab57-d2a24c1f9de5",
+            "publishedDate": "2024-12-30T06:20:37.1982357",
+            "tagId": 2,
+            "tagName": "Programming",
+            "blogComments": null,
+            "isApproved": true,
+            "isTranding": false,
+            "rejectComment": ""
+        },
+        {
+            "blogId": 24,
+            "title": "Others Test",
+            "description": "Others ,Your blog has been successfully created and is currently awaiting admin approval.\nWe will notify you once it has been approved .Test",
+            "isActive": false,
+            "userId": "65f7b244-67e5-45e3-ab57-d2a24c1f9de5",
+            "publishedDate": "2024-12-28T10:55:46.4950921",
+            "tagId": 32,
+            "tagName": "Others",
+            "blogComments": null,
+            "isApproved": false,
+            "isTranding": false,
+            "rejectComment": "test reject"
+        }]
 
 ## Setup Instructions
 
