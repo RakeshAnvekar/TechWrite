@@ -8,12 +8,7 @@ TechWrite is a blogging platform built with **ASP.NET Core MVC**, **Web API**, *
 3. [Features](#features)
 4. [Architecture](#architecture)
 5. [Setup Instructions](#setup-instructions)
-6. [API Documentation](#api-documentation)
-7. [Authentication](#authentication)
-8. [Error Handling](#error-handling)
-9. [Contributing](#contributing)
-10. [License](#license)
-
+  
 ## Introduction
 TechWrite is a modern blogging platform that provides an easy-to-use interface for users to create, read, update, and delete (CRUD) blog posts. The project is designed to showcase best practices in **ASP.NET Core MVC**, **Web API**, and modern authentication methods using **JWT Tokens**.
 
