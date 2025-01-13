@@ -66,3 +66,122 @@ Clone the repository to your local machine using Git:
 ```bash
 git clone https://github.com/yourusername/techwrite.git
 cd techwrite
+
+## API Documentation
+
+TechWrite exposes several API endpoints for interacting with blog posts, user authentication, and validation. Below is the list of available API endpoints.
+
+### Authentication Endpoints
+- **POST** `/api/auth/login`: Logs in a user and returns a JWT token.
+  - **Request Body**:
+    ```json
+    {
+      "email": "user@example.com",
+      "password": "password123"
+    }
+    ```
+  - **Response**:
+    ```json
+    {
+      "token": "your-jwt-token"
+    }
+    ```
+  - **Description**: Logs in a user and generates a JWT token that is used for authenticated API requests.
+
+- **POST** `/api/auth/register`: Registers a new user.
+  - **Request Body**:
+    ```json
+    {
+      "email": "user@example.com",
+      "password": "password123",
+      "username": "newuser"
+    }
+    ```
+  - **Response**:
+    ```json
+    {
+      "message": "User registered successfully"
+    }
+    ```
+  - **Description**: Registers a new user by providing email, password, and username. The user is stored in the database.
+
+### Blog Post Endpoints
+- **GET** `/api/blogs`: Retrieves a list of blog posts.
+  - **Response**:
+    ```json
+    [
+      {
+        "id": 1,
+        "title": "First Blog Post",
+        "content": "This is the content of the first blog post.",
+        "author": "user@example.com"
+      },
+      ...
+    ]
+    ```
+  - **Description**: Fetches all blog posts available in the system.
+
+- **GET** `/api/blogs/{id}`: Retrieves a specific blog post by its ID.
+  - **Response**:
+    ```json
+    {
+      "id": 1,
+      "title": "First Blog Post",
+      "content": "This is the content of the first blog post.",
+      "author": "user@example.com"
+    }
+    ```
+  - **Description**: Fetches a specific blog post based on the provided ID.
+
+- **POST** `/api/blogs`: Creates a new blog post. (Requires `User` or `Admin` role).
+  - **Request Body**:
+    ```json
+    {
+      "title": "New Blog Post",
+      "content": "Content for the new blog post.",
+      "author": "user@example.com"
+    }
+    ```
+  - **Response**:
+    ```json
+    {
+      "message": "Blog post created successfully"
+    }
+    ```
+  - **Description**: Creates a new blog post. Requires authentication and the `User` or `Admin` role.
+
+- **PUT** `/api/blogs/{id}`: Updates an existing blog post (Requires `Admin` role).
+  - **Request Body**:
+    ```json
+    {
+      "title": "Updated Blog Post",
+      "content": "Updated content for the blog post."
+    }
+    ```
+  - **Response**:
+    ```json
+    {
+      "message": "Blog post updated successfully"
+    }
+    ```
+  - **Description**: Updates an existing blog post based on its ID. Requires `Admin` role.
+
+- **DELETE** `/api/blogs/{id}`: Deletes a blog post (Requires `Admin` role).
+  - **Response**:
+    ```json
+    {
+      "message": "Blog post deleted successfully"
+    }
+    ```
+  - **Description**: Deletes a specific blog post based on its ID. Requires `Admin` role.
+
+---
+
+## Authentication
+
+TechWrite uses **JWT Authentication** to secure API endpoints. To access protected resources like creating or updating blog posts, include a valid JWT token in the `Authorization` header:
+
+### Request with JWT Token
+```bash
+Authorization: Bearer <your-jwt-token>
+
