@@ -45,19 +45,44 @@ The application follows a **Layered Architecture** with the following layers:
 - **Dependency Injection (DI)** is used throughout the project to inject required services (e.g., repositories, business logic) into controllers and other components.
 - **Repository Pattern** is implemented to abstract and encapsulate all data access logic, making it easier to swap out the data source if needed.
 
-## Setup Instructions
-
-To get started with **TechWrite**, follow these steps:
-
 ### Prerequisites
 1. **.NET Core SDK 6.0 or higher**.
 2. **SQL Server** (Express or any version) installed.
 3. **Visual Studio 2022 or VS Code**.
 4. **Postman** (Optional, for testing the API endpoints).
+   
+## API Endpoints
+The API exposes the following endpoints to manage tasks. You can explore these endpoints in **Swagger**.
 
-### Step 1: Clone the Repository
-Clone the repository to your local machine using Git:
+### GET /api/TaskManagement/GetAllTasks
+- **Description**: Retrieves all tasks.
+- **Response**: A list of tasks.
 
+### GET /api/TaskManagement/GetTaskDetails/{taskItemId}
+- **Description**: Retrieves a task by its ID.
+- **Response**: Task details for the given ID.
+
+### POST /api/TaskManagement/CreateNewTaskItem
+- **Description**: Creates a new task.
+- **Request Body**: JSON object containing task name, description, and deadline.
+- **Response**: Created task details.
+
+### PUT /api/TaskManagement/UpdateTaskDetails/{id}
+- **Description**: Updates an existing task by ID.
+- **Request Body**: JSON object with updated task information.
+- **Response**: Updated task details.
+
+### DELETE /api/TaskManagement/TaskManagement{id}
+- **Description**: Deletes a task by ID.
+- **Response**: Success message or error message.
+
+You can access and test these endpoints using **Swagger UI**, which is available when the backend API is running.
+
+## Setup Instructions
+
+To get started with **TechWrite**, follow these steps:
 ```bash
 git clone https://github.com/yourusername/techwrite.git
 cd techwrite
+
+
