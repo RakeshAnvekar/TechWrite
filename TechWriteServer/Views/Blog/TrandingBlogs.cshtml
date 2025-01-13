@@ -1,0 +1,17 @@
+﻿@model List<TechWriteServer.Models.Blog.Blog>
+<h4><b>Active Blogs</b></h4>
+<br />
+@if (Model != null && Model.Count > 0)
+{
+    @foreach (var blog in Model)
+    {
+        <h5>@blog.Title</h5>
+        <p>@blog.Description</p>
+
+        <span><b>Author:</b> Rakesh Vinod Anvekar</span>
+        <br />
+        <span><b>Published Date:</b>@blog.PublishedDate</span>       
+        <br />
+        <br />
+    }
+}

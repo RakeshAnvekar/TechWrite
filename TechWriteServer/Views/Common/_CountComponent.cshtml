@@ -1,0 +1,42 @@
+﻿<div class="user-circle">
+    <span class="count">400</span>
+    <div class="label">Active Users</div>
+</div>
+
+<style>
+
+    .user-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: conic-gradient(#4CAF50 0% 50%, #eeeeee 50% 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+        .user-circle .count {
+            position: absolute;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .user-circle .label {
+            position: absolute;
+            bottom: -10px;
+            font-size: 12px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .user-circle:hover {
+            transform: scale(1.1);
+        }
+
+</style>

@@ -1,0 +1,68 @@
+﻿@model TechWriteServer.ViewModels.BlogViewModel
+<div>
+    <h5>Create New Blog</h5>
+    <select class="tags" id="selectTagId">
+        <option value="">Select a Tag...</option>
+        @foreach (var tag in Model.Tags)
+        {
+            <option value=@tag.TagId>@tag.TagName</option>
+        }
+    </select><br/>
+    @Html.TextAreaFor(model => model.blog.Title, new { @id = "blogTitle", @rows = 2, @cols = 80, @placeholder = "Enter Blog Title..."})
+    @Html.TextAreaFor(model => model.blog.Description, new { @id = "blogDescription", @rows = 4, @cols = 80, @placeholder = "Enter Blog Description..." })<br />
+    @Html.HiddenFor(model => model.blog.UserId, new { @id = "userId"})
+   <span>
+        <b>@DateTime.UtcNow</b>
+        <button class="btn btn-dark text-white" style="margin-left:370px" id="btnPublishBlog" type="button">Publish</button>
+    </span>    
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btnPublishBlog").click(function () {
+            var blogData = {
+                Title: $("#blogTitle").val(),
+                Description: $("#blogDescription").val(),
+                UserId:"65F7B244-67E5-45E3-AB57-D2A24C1F9DE5",
+                TagId: $("#selectTagId").val(),
+            };
+
+             $.ajax({
+                url: 'api/BlogApi/CreateNewBlog',  
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(blogData),  
+                dataType: 'json', 
+                success: function (response) {
+                    if (response.blogId) {
+                    $('#response').html('<p Style="color:darksalmon">Your blog has been successfully created and is currently awaiting admin approval.<br/> We will notify you once it has been approved.!</p><br/>Thank You...');
+                    $('#blogTitle').val('');
+                    $('#blogDescription').val('');
+                    $('#userId').val('');
+                    $('#createNewBlogContainer').hide();
+                    } else {
+                        $('#response').html('<p>Error: ' + response.message + '</p>');                       
+                    }
+                },
+                error: function (xhr, status, error) {
+                    $('#response').html('<p>An error occurred: ' + error + '</p>');
+                    $('#blogTitle').val('');
+                    $('#blogDescription').val('');
+                    $('#userId').val('');
+                }
+            });
+        });
+       
+       
+    });
+</script>
+<style>
+    .tags{
+        margin-bottom: 10px;
+        height: 30px;
+        color: #372727a6;
+    }
+</style>
+

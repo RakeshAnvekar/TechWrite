@@ -1,0 +1,67 @@
+﻿@model TechWriteServer.ViewModels.BlogViewModel
+@{
+    Layout = "_Layout";
+}
+
+<span>
+    @if (ViewBag.UserLoggedInStatus!=null)
+    {
+        <button class="btn btn-dark text-white" id="btnCreateNewBlog" type="submit">Create New</button>
+
+    }
+     <span style="margin-left:300px">Top Trending <b>@Model?.Blogs?.Count</b></span></span><br/>
+<br />
+<div id="createNewBlogContainer" style="display:none">
+    @await Html.PartialAsync("_NewBlogDetailsPartial",Model)  
+</div>
+  <!-- Response Placeholder -->
+    <div id="response"></div> 
+<br/>
+@if (Model!=null && Model.Blogs?.Count >0 )
+{
+    @foreach (var blog in Model.Blogs.Where(x=>x.IsActive==true && x.IsApproved==true))
+    {
+        <h4>@blog.Title</h4>
+        <div class="tag-card">
+            <span>@blog.TagName</span>
+        </div>
+        <p>@blog.Description</p>
+
+        <span><b>Author:</b> Rakesh Vinod Anvekar</span><br/>
+        <span><b>Published Date:</b>@blog.PublishedDate.ToString("MMMM dd, yyyy hh:mm:ss tt")</span>
+        <br /><br />
+        @if (Model.BlogComments?.Count>0)
+        {
+            @await Html.PartialAsync("_BlogCommentsPartial", Model)
+        }
+        
+    }
+}    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+   
+     <script>
+    $(document).ready(function () {
+        $("#btnCreateNewBlog").click(function () {
+            $('#createNewBlogContainer').toggle();
+             $('#response').html('<p></p>');
+                   
+        });        
+        });
+     </script>
+
+     <style>
+    .tag-card {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #6c757d63;
+        color: white;
+        border-radius: 15px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+     </style>
+       
+   
+
+

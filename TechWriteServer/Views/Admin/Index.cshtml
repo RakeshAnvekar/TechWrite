@@ -1,0 +1,144 @@
+﻿@model TechWriteServer.ViewModels.AdminActionViewModel
+@{
+    Layout = "_Layout";
+}
+
+<div>
+    @if (Model != null && Model.Blogs?.Count > 0)
+    {
+        @foreach (var blog in Model.Blogs)
+        {
+            <p><b>Blog Id  :</b> @blog.BlogId</p>
+            <p><b>Title  :</b> @blog.Title</p>
+            <p><b>Description : </b>@blog.Description</p>
+            <p><b>Created Date :</b> @blog.PublishedDate</p>
+            <div id="rejectSection" style="display:none">
+                Hi
+            </div>
+            <span>
+                <button class="approve-btn" data-blog-id="@blog.BlogId">Approve</button>
+                <button class="reject-btn" id="btn_reject_@blog.BlogId" data-blog-id="@blog.BlogId">Reject</button>
+            </span>            
+        }
+        
+    }
+   
+</div>
+
+
+
+<style>
+    /* General button styles */
+    button {
+        padding: 10px 20px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .approve-btn {
+        background-color: #4CAF50; /* Green for approve */
+        color: white;
+    }
+    .cancel-btn{
+        background-color: #364df4;
+        color:white;
+    }
+
+        .approve-btn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        .approve-btn:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.6); /* Light green focus effect */
+        }
+
+    .reject-btn {
+        background-color: #f44336; /* Red for reject */
+        color: white;
+    }
+
+        .reject-btn:hover {
+            background-color: #d32f2f; /* Darker red on hover */
+        }
+
+        .reject-btn:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(244, 67, 54, 0.6); /* Light red focus effect */
+        }
+
+    /* Optional: Add some spacing between buttons */
+    button + button {
+        margin-left: 10px;
+    }
+
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.approve-btn').click(function () {
+            var blogId = $(this).data('blogId');
+            if (blogId) {
+                approveBlog(blogId);
+            }
+        });
+        $('.reject-btn').click(function () {
+            var blogId = $(this).data('blogId');
+            if (blogId) {
+                rejectBlog(blogId,"test Reject Comment");
+            }
+        });
+       
+    });
+
+
+    function approveBlog(blogId) {
+        var blogData = { blogId: blogId };
+        $.ajax({
+            url: '/api/BlogApi/ApproveBlog/' + blogData.blogId,
+            type: 'POST',
+            contentType: 'application/json',
+            dataType: 'json',
+            success: function (response) {
+                console.log("Response:", response);
+                if (response && response.message === "Blog approved successfully!") {
+                    alert(response.message);
+                } else {
+                    alert('Unexpected response from server.');
+                }
+            },
+            error: function (xhr, status, error) {
+                console.log("Error status:", status);
+                console.log("Error:", error);
+                alert('Failed to approve blog. Error: ' + error);
+            }
+        });
+    }
+    function rejectBlog(blogId, rejectComment) {
+        var rejectBlogData = { BlogId: blogId, RejectComment: rejectComment };
+        $.ajax({
+            url: '/api/BlogApi/RejectBlog',
+            type: 'POST',
+            contentType: 'application/json',
+            dataType: 'json',
+            data: JSON.stringify(rejectBlogData),
+            success: function (response) {
+                console.log("Response:", response);
+                if (response && response.message === "Blog Rejected successfully!") {
+                    alert(response.message);
+                } else {
+                    alert('Unexpected response from server.');
+                }
+            },
+            error: function (xhr, status, error) {
+                console.log("Error status:", status);
+                console.log("Error:", error);
+                alert('Failed to approve blog. Error: ' + error);
+            }
+        });
+    }
+</script>

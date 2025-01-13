@@ -1,0 +1,141 @@
+[
+  {
+    "ContainingType": "TechWriteServer.Controllers.Api.Controllers.BlogApiController",
+    "Method": "Get",
+    "RelativePath": "api/BlogApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechWriteServer.Controllers.Api.Controllers.BlogApiController",
+    "Method": "Post",
+    "RelativePath": "api/BlogApi/ApproveBlog/{blogId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "blogId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechWriteServer.Controllers.Api.Controllers.BlogApiController",
+    "Method": "Post",
+    "RelativePath": "api/BlogApi/CreateNewBlog",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BlogId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsActive",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PublishedDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "TagId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TagName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BlogComments",
+        "Type": "System.Collections.Generic.List\u00601[[TechWriteServer.Models.Blog.BlogComment, TechWriteServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsApproved",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsTranding",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "RejectComment",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechWriteServer.Controllers.Api.Controllers.BlogApiController",
+    "Method": "Post",
+    "RelativePath": "api/BlogApi/RejectBlog",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rejectBlog",
+        "Type": "TechWriteServer.Views.Blog.RejectBlog",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechWriteServer.Controllers.Api.Controllers.TagApiController",
+    "Method": "GetAsync",
+    "RelativePath": "api/TagApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechWriteServer.Controllers.Api.Controllers.UserApiController",
+    "Method": "Post",
+    "RelativePath": "api/UserApi/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TechWriteServer.Models.User.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

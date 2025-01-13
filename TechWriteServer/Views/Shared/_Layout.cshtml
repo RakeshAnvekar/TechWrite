@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Tech Write</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="/" class="h3 text-white">Tech Write</a>
+
+            <!-- Registration and Login buttons -->
+            @if (string.IsNullOrEmpty(@ViewBag.LoginUserName))
+            {
+                <div class="d-flex">
+                    <form class="form-inline" method="get" action="/user/register">
+                        <button class="btn btn-outline-light" type="submit">Register</button>
+                    </form>
+                    <form class="form-inline" method="get" action="/user/Login">
+                        <button class="btn btn-outline-light ml-2" type="submit">Login</button>
+                    </form>
+                   
+                </div>
+            }           
+
+            <!-- Welcome message, shown only if user is logged in -->
+            @if (!string.IsNullOrEmpty(@ViewBag.LoginUserName))
+            {
+                <span style="display:flex">
+                    <p class="mb-0 ml-3 my-auto"><b>Welcome ! @ViewBag.LoginUserName</b></p>
+                    <form class="form-inline" method="get" action="/user/Logout">
+                        <button class="btn btn-outline-light ml-2" type="submit">Logout</button>
+                    </form>
+                   
+                </span>
+               
+            }
+           
+        </div>
+    </header>
+
+
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-3">
+                <div class="list-group">
+                    <a asp-controller="Blog" asp-action="TrandingBlogs" class="list-group-item list-group-item-action">Top Trending</a>
+                    <a href="/recent" class="list-group-item list-group-item-action">Recent Posts</a>
+                    <a href="/tag" class="list-group-item list-group-item-action">Tags</a>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-9">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Tech Write Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

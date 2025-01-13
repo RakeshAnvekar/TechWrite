@@ -1,0 +1,48 @@
+﻿@model IEnumerable<TechWriteServer.Models.Tag.Tag>
+<h3>Active tags</h3>
+<div class="container mt-5">
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="row">
+        @foreach (var tag in Model)
+        {
+            <div class="col-md-3 mb-3 tag-container" style="position: relative;">
+                <!-- Tag Name -->
+                <div class="tag-name">
+                    @tag.TagName
+                </div>
+
+                <!-- Tag Description (hidden by default) -->
+                <div class="tag-desc" style="position: absolute; background-color: #f1f1f1; padding: 10px; border: 1px solid #ddd; z-index: 1;">
+                    @tag.TagDescription
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+<style>
+    .tag-container:hover .tag-desc {
+        display: block;
+    }
+
+    .tag-container {
+        cursor: pointer;
+    }
+
+    .tag-desc {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        z-index: 1;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .tag-name {
+        font-weight: bold;
+    }
+</style>

@@ -1,0 +1,42 @@
+﻿<!-- Views/Account/Register.cshtml -->
+@model TechWriteServer.Models.User.User
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="OnRegister" method="post">
+    <div class="form-group">
+        <label for="Username">Username <span style="color:red">*</span></label>
+        <input type="text" asp-for="UserName" id="userName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Email">Email <span style="color:red">*</span></label>
+        <input type="email" asp-for="UserEmailId" id="userEmailId" class="form-control" />
+        <span asp-validation-for="UserEmailId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Password">Password <span style="color:red">*</span></label>
+        <input type="password" asp-for="Password" id="userPassword" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ConfirmPassword">Confirm Password <span style="color:red">*</span></label>
+        <input type="password" asp-for="ConfirmPassword" id="confirmUserPassword" class="form-control" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ConfirmPassword">Phone Number</label>
+        <input type="tel" asp-for="UserPhoneNo" id="userPhoneNumber" class="form-control" />
+        <span asp-validation-for="UserPhoneNo" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary" id="btnRegister">Register</button>
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation/1.19.3/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
