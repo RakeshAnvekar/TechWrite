@@ -1,5 +1,8 @@
 ﻿@model List<TechWriteServer.Models.Blog.Blog>
-<h4><b>Active Blogs</b></h4>
+<span style="margin-left:300px">Top Trending <b>@Model?.Count</b></span></span><br/>
+<span><span  style="
+    font-size: xx-large;">Trending Blogs</span> <img src="/Images/Trending.png" style="width: 40px;height: 40px;"></img></span>
+<br />
 <br />
 @if (Model != null && Model.Count > 0)
 {
@@ -10,7 +13,7 @@
 
         <span><b>Author:</b> Rakesh Vinod Anvekar</span>
         <br />
-        <span><b>Published Date:</b>@blog.PublishedDate</span>       
+                <span><b>Published Date: </b>@blog.PublishedDate.ToString("MMMM dd, yyyy hh:mm:ss tt")</span>       
         <br />
         <br />
     }

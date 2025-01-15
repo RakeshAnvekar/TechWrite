@@ -3,10 +3,14 @@
     <h5>Create New Blog</h5>
     <select class="tags" id="selectTagId">
         <option value="">Select a Tag...</option>
-        @foreach (var tag in Model.Tags)
+        @if (Model != null && Model.Tags!=null)
         {
-            <option value=@tag.TagId>@tag.TagName</option>
+            @foreach (var tag in Model.Tags)
+            {
+                <option value=@tag.TagId>@tag.TagName</option>
+            }
         }
+        
     </select><br/>
     @Html.TextAreaFor(model => model.blog.Title, new { @id = "blogTitle", @rows = 2, @cols = 80, @placeholder = "Enter Blog Title..."})
     @Html.TextAreaFor(model => model.blog.Description, new { @id = "blogDescription", @rows = 4, @cols = 80, @placeholder = "Enter Blog Description..." })<br />

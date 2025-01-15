@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TechWriteServer.BusinessLogics.Interfaces;
+using TechWriteServer.ViewModels;
 namespace TechWriteServer.Controllers;
 
 public class BlogController : Controller
@@ -48,6 +49,7 @@ public class BlogController : Controller
         {
             var items = await _blogLogic.GetAllTrandingBlogsAsync(HttpContext.RequestAborted);
             return View(items);
+            
         }
         catch (Exception ex)
         {
