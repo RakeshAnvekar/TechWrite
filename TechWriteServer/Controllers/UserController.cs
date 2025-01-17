@@ -111,6 +111,7 @@ public class UserController : Controller
                 {
                     TempData["userName"] = userExists?.UserName;
                     TempData["userLoggedInStatus"] = userExists?.IsUserLoggedIn;
+                    TempData["userId"] = userExists?.UserId;
                     await _cookieHelper.SetCookieAsync("AuthToken", tokenValue);
                     return RedirectToAction("Index", "Blog");
                 }
