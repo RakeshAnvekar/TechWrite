@@ -101,3 +101,15 @@ publish/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/TechWriteServer/bin/Debug/net8.0/TechWriteServer.dll
+/TechWriteServer/bin/Debug/net8.0/TechWriteServer.exe
+/TechWriteServer/bin/Debug/net8.0/TechWriteServer.pdb
+/TechWriteServer/obj/Debug/net8.0/ref/TechWriteServer.dll
+/TechWriteServer/obj/Debug/net8.0/refint/TechWriteServer.dll
+/TechWriteServer/obj/Debug/net8.0/ApiEndpoints.json
+/TechWriteServer/obj/Debug/net8.0/apphost.exe
+/TechWriteServer/obj/Debug/net8.0/TechWriteServer.AssemblyInfo.cs
+/TechWriteServer/obj/Debug/net8.0/TechWriteServer.AssemblyInfoInputs.cache
+/TechWriteServer/obj/Debug/net8.0/TechWriteServer.dll
+/TechWriteServer/obj/Debug/net8.0/TechWriteServer.pdb
+/TechWriteServer/obj/Debug/net8.0/TechWriteServer.sourcelink.json
