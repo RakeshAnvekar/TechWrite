@@ -70,5 +70,30 @@ public class BlogRepository : IBlogRepository
         }
     }
 
+    public async Task<Blog?> BlogLikeAsync(Blog blog, CancellationToken cancellationToken)
+    {
+        if(blog == null) throw new ArgumentNullException(nameof(blog));
+
+       var existingBlog=await _techWriteAppDbContext.Blogs.FindAsync(blog.BlogId,cancellationToken);
+        if (existingBlog != null) {
+            existingBlog.BlogLikes =+1;
+           await _techWriteAppDbContext.SaveChangesAsync(cancellationToken);           
+        }
+        return existingBlog;
+    }
+
+    public async Task<Blog?> BlogDisLikeAsync(Blog blog, CancellationToken cancellationToken)
+    {
+        if (blog == null) throw new ArgumentNullException(nameof(blog));
+
+        var existingBlog = await _techWriteAppDbContext.Blogs.FindAsync(blog.BlogId, cancellationToken);
+        if (existingBlog != null)
+        {
+            existingBlog.BlogLikes = -1;
+            await _techWriteAppDbContext.SaveChangesAsync(cancellationToken);
+        }
+        return existingBlog;
+    }
+
     #endregion
 }
