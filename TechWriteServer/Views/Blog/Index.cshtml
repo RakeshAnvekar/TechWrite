@@ -28,7 +28,11 @@
 
         <span><b>Author:</b> Rakesh Vinod Anvekar</span><br/>
         <span><b>Published Date:</b>@blog.PublishedDate.ToString("MMMM dd, yyyy hh:mm:ss tt")</span>
-        <br /><br />
+        <br />
+        <span><a><img src="/Images/LikeBlog.png" style="width:30px;height:30px" /></a> @blog.BlogLikes</span>
+        <span><a style="margin-left:20px"><img src="/Images/DislikeBlog.png" style="width:30px;height:30px" /></a> @blog.BlogLikes</span>
+        
+        <br />
         @if (Model.BlogComments?.Count>0)
         {
             @await Html.PartialAsync("_BlogCommentsPartial", Model)

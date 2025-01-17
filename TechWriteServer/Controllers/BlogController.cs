@@ -33,7 +33,13 @@ public class BlogController : Controller
                 }                
             }
             var loginUserName = TempData["userName"] as string;
-            ViewBag.LoginUserName = loginUserName; // Store the message in ViewBag
+            if (TempData?["userId"]!=null)
+            {
+                Guid loginUserId = (Guid)TempData?["userId"];
+                ViewBag.LoginUserId = loginUserId;
+            }           
+
+            ViewBag.LoginUserName = loginUserName; // Store the message in ViewBag           
             var items = await _blogLogic.GetAllBlogsAsync(HttpContext.RequestAborted);
             return View(items);
         }

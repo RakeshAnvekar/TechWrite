@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechWriteServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a006c67a191d8eba22488671aa641dbd9cc5197")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b6c8f5cb7f3d102eef73cc587ad2a28efe202ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechWriteServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechWriteServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

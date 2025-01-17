@@ -38,7 +38,7 @@ ehthumbs.db
 ##########################
 
 # Build directories (binaries, obj, and intermediate files)
-bin/
+bin/*
 obj/
 
 # User-specific files (e.g., settings, and configurations)

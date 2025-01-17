@@ -13,12 +13,28 @@
       "PackagePath": "staticwebassets\\Images\\500InternalServerError.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\Dislike-icon.jpg",
+      "PackagePath": "staticwebassets\\Images\\Dislike-icon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\DislikeBlog.png",
+      "PackagePath": "staticwebassets\\Images\\DislikeBlog.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\LikeBlog.png",
+      "PackagePath": "staticwebassets\\Images\\LikeBlog.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\RrightMark.png",
       "PackagePath": "staticwebassets\\Images\\RrightMark.png"
     },
     {
       "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\Trending.png",
       "PackagePath": "staticwebassets\\Images\\Trending.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\like-icon.png",
+      "PackagePath": "staticwebassets\\Images\\like-icon.png"
     },
     {
       "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\css\\site.css",
