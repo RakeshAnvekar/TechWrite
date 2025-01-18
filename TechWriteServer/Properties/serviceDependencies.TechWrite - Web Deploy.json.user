@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "restored": true,
+      "restoreTime": "2025-01-18T06:41:01.4480068Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2025-01-18T06:41:04.9203935Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "77c99f52-7f2c-4a8c-9045-38deaef6086e"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "TechWrite-Prod-AustraliaEast"
+    }
+  }
+}

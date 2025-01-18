@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "ignored": "true",
+      "type": "identityapp"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/TechWrite/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsConnectionString_CB136E38BA",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/techwriteserverdbserver/databases/TechWriteServer_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:ConnectionString"
+    }
+  }
+}
