@@ -95,8 +95,39 @@ namespace TechWriteServer.Controllers.Api.Controllers
             }
 
         }
+        [Authorize(Roles = "Admin,User")]
+        [HttpPut("LikeBlog")]
+        public async Task<IActionResult> LikeBlog(Blog blog)
+        {
+            try
+            {
+              var reult =  await _blogLogic.BlogLikeAsync(blog,HttpContext.RequestAborted);
+                return Ok(reult);
 
-        
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Class:{nameof(BlogApiController)}. :: Error while liking the blog. :: Exception: {ex.InnerException}");
+                return BadRequest(ex);
+            }
+        }
+        [Authorize(Roles = "Admin,User")]
+        [HttpPut("DisLikeBlog")]
+        public async Task<IActionResult> DisLikeBlog(Blog blog)
+        {
+            try
+            {
+                var reult = await _blogLogic.BlogDisLikeAsync(blog, HttpContext.RequestAborted);
+                return Ok(reult);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Class:{nameof(BlogApiController)}. :: Error while disliking the blog. :: Exception: {ex.InnerException}");
+                return BadRequest(ex);
+            }
+        }
+
 
         #endregion
     }

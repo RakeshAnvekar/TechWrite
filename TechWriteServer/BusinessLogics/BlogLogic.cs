@@ -65,6 +65,16 @@ public sealed class BlogLogic : IBlogLogic
     {
         await _blogRepository.RejectAsync(blogId, comment, cancellationToken);
     }
+
+    public async Task<Blog?> BlogLikeAsync(Blog blog, CancellationToken cancellationToken)
+    {
+        return await _blogRepository.BlogLikeAsync(blog, cancellationToken);
+    }
+
+    public async Task<Blog?> BlogDisLikeAsync(Blog blog, CancellationToken cancellationToken)
+    {
+        return await _blogRepository.BlogDisLikeAsync(blog, cancellationToken);
+    }
     #endregion
 
 

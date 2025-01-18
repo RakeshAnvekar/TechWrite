@@ -26,6 +26,19 @@ public interface IBlogLogic
     /// <param name="cancellationToken">A token to observe while waiting for the task to complete. It allows the operation to be cancelled.</param>
     /// <returns></returns>
     public Task RejectBlogAsync(int blogId, string comment, CancellationToken cancellationToken);
-
+    /// <summary>
+    /// Likes the blog content by incrementing likes by 1.
+    /// </summary>
+    /// <param name="blog">The Blog</param>
+    /// <param name="cancellationToken">The CancellationToken</param>
+    /// <returns>Returns Updated blog</returns>
+    public Task<Blog?> BlogLikeAsync(Blog blog, CancellationToken cancellationToken);
+    /// <summary>
+    /// Dislikes the blog content by decrementing likes by 1.
+    /// </summary>
+    /// <param name="blog">The Blog</param>
+    /// <param name="cancellationToken">The CancellationToken</param>
+    /// <returns>Returns Updated blog</returns>
+    public Task<Blog?> BlogDisLikeAsync(Blog blog, CancellationToken cancellationToken);
     #endregion
 }
