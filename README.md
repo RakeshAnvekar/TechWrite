@@ -1,4 +1,7 @@
 # TechWrite - A Blog Application
+## Application url :
+https://techwrite.azurewebsites.net/
+
 
 TechWrite is a blogging platform built with **ASP.NET Core MVC**, **Web API**, **SQL Server**, **Entity Framework**, **JWT Authentication**, **Fluent Validation**, and **Repository Design Pattern**. The application allows users to create, view, and manage blog posts while ensuring robust security and scalable architecture through modern design patterns like Dependency Injection.
 
