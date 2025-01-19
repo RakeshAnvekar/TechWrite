@@ -37,15 +37,15 @@ public interface IBlogRepository
     /// <summary>
     /// Likes the blog content by incrementing likes by 1.
     /// </summary>
-    /// <param name="blog">The Blog</param>
+    /// <param name="blogId">The Blog identification.</param>
     /// <param name="cancellationToken">The CancellationToken</param>
     /// <returns>Returns Updated blog</returns>
-    public Task<Blog?> BlogLikeAsync(Blog blog, CancellationToken cancellationToken);
+    public Task<Blog?> BlogLikeAsync(int blogId, CancellationToken cancellationToken);
     /// <summary>
     /// Dislikes the blog content by decrementing likes by 1.
     /// </summary>
-    /// <param name="blog">The Blog</param>
+    /// <param name="blogId">The Blog identification.</param>
     /// <param name="cancellationToken">The CancellationToken</param>
     /// <returns>Returns Updated blog</returns>
-    public Task<Blog?> BlogDisLikeAsync(Blog blog, CancellationToken cancellationToken);
+    public Task<Blog?> BlogDisLikeAsync(int blogId, CancellationToken cancellationToken);
 }
