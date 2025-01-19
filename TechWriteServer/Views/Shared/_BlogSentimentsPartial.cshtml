@@ -1,0 +1,47 @@
+﻿@model TechWriteServer.Models.Blog.Blog
+@if (!string.IsNullOrEmpty(@ViewBag.LoginUserName))
+{
+    <div class="likeDislikeContainer">
+        <span>
+            <a href="javascript:void(0);" class="like-button" data-blog-id="@Model?.BlogId">
+                <img src="/Images/LikeBlog.png" style="width:30px;height:30px" />
+            </a>
+            <span class="like-count">@Model?.BlogLikes</span>
+        </span>
+        <span>
+            <a href="javascript:void(0);" class="dislike-button" data-blog-id="@Model?.BlogId">
+                <img src="/Images/DislikeBlog.png" style="width:30px;height:30px" />
+            </a>
+            <span class="dislike-count">@Model?.BlogLikes</span>
+        </span>
+    </div>
+}
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#btnCreateNewBlog").click(function () {
+            $('#createNewBlogContainer').toggle();
+            $('#response').html('<p></p>');
+
+        });
+        $(".like-button").click(function () {
+            var blogId = $(this).data("blog-id");
+            var likeButton = $(this);
+            var likeCountElement = likeButton.parent().find('.like-count');
+            $.ajax({
+                url: '/api/BlogApi/LikeBlog/' + blogId,
+                type: 'PUT',
+                contentType: 'application/json',
+                success: function (response) {
+                    likeCountElement.text(response);
+                },
+                error: function (error) {
+                    console.error('Error liking the blog:', error);
+                }
+            });
+        });
+    });
+</script>
