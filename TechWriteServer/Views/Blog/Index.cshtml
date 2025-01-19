@@ -28,11 +28,25 @@
 
         <span><b>Author:</b> Rakesh Vinod Anvekar</span><br/>
         <span><b>Published Date:</b>@blog.PublishedDate.ToString("MMMM dd, yyyy hh:mm:ss tt")</span>
-        <br />
-        <span><a><img src="/Images/LikeBlog.png" style="width:30px;height:30px" /></a> @blog.BlogLikes</span>
-        <span><a style="margin-left:20px"><img src="/Images/DislikeBlog.png" style="width:30px;height:30px" /></a> @blog.BlogLikes</span>
-        
-        <br />
+            <br />
+            @if (!string.IsNullOrEmpty(@ViewBag.LoginUserName))
+            {
+                <div class="likeDislikeContainer">
+                    <span>
+                        <a href="javascript:void(0);" class="like-button" data-blog-id="@blog.BlogId">
+                            <img src="/Images/LikeBlog.png" style="width:30px;height:30px" />
+                        </a>
+                        <span class="like-count">@blog.BlogLikes</span>
+                    </span>
+                    <span>
+                        <a href="javascript:void(0);" class="dislike-button" data-blog-id="@blog.BlogId">
+                            <img src="/Images/DislikeBlog.png" style="width:30px;height:30px" />
+                        </a>
+                        <span class="dislike-count">@blog.BlogLikes</span>
+                    </span>
+                </div>
+            }  
+            <br />
         @if (Model.BlogComments?.Count>0)
         {
             @await Html.PartialAsync("_BlogCommentsPartial", Model)
@@ -49,7 +63,23 @@
             $('#createNewBlogContainer').toggle();
              $('#response').html('<p></p>');
                    
-        });        
+        });
+            $(".like-button").click(function () {
+                var blogId = $(this).data("blog-id");
+                var likeButton = $(this);
+                var likeCountElement = likeButton.parent().find('.like-count');
+                $.ajax({
+                    url: '/api/BlogApi/LikeBlog/' + blogId,
+                    type: 'PUT',
+                    contentType: 'application/json',
+                    success: function (response) {
+                        likeCountElement.text(response);
+                    },
+                    error: function (error) {
+                        console.error('Error liking the blog:', error);
+                    }
+                });
+            });
         });
      </script>
 

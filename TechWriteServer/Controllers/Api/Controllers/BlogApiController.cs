@@ -96,13 +96,13 @@ namespace TechWriteServer.Controllers.Api.Controllers
 
         }
         [Authorize(Roles = "Admin,User")]
-        [HttpPut("LikeBlog")]
-        public async Task<IActionResult> LikeBlog(Blog blog)
+        [HttpPut("LikeBlog/{blogId:int}")]
+        public async Task<IActionResult> LikeBlog(int blogId)
         {
             try
             {
-              var reult =  await _blogLogic.BlogLikeAsync(blog,HttpContext.RequestAborted);
-                return Ok(reult);
+              var result =  await _blogLogic.BlogLikeAsync(blogId, HttpContext.RequestAborted);
+                return Ok(result?.BlogLikes);
 
             }
             catch (Exception ex)
@@ -112,13 +112,13 @@ namespace TechWriteServer.Controllers.Api.Controllers
             }
         }
         [Authorize(Roles = "Admin,User")]
-        [HttpPut("DisLikeBlog")]
-        public async Task<IActionResult> DisLikeBlog(Blog blog)
+        [HttpPut("DisLikeBlog/{blogId:int}")]
+        public async Task<IActionResult> DisLikeBlog(int blogId)
         {
             try
             {
-                var reult = await _blogLogic.BlogDisLikeAsync(blog, HttpContext.RequestAborted);
-                return Ok(reult);
+                var result = await _blogLogic.BlogDisLikeAsync(blogId, HttpContext.RequestAborted);
+                return Ok(result?.BlogLikes);
 
             }
             catch (Exception ex)
