@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TechWriteServer.Models.Blog;
 
 namespace TechWriteServer.Models.User;
 
@@ -24,5 +25,7 @@ public class User
     public bool? isActive { get; set; } = true;
     public string? ProfilePicture { get; set; }
     public bool IsUserLoggedIn { get; set;} = false;
+    public ICollection<TechWriteServer.Models.Blog.Blog> Blogs { get; set; }  // Blogs written by the user
+    public ICollection<BlogLike> BlogLikes { get; set; }  // Blogs liked by the user
 }
 

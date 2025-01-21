@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechWriteServer.DbContext;
 
@@ -11,9 +12,11 @@ using TechWriteServer.DbContext;
 namespace TechWriteServer.Migrations
 {
     [DbContext(typeof(TechWriteAppDbContext))]
-    partial class TechWriteAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250121080711_AddBlogLikeTable_1")]
+    partial class AddBlogLikeTable_1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -246,17 +249,21 @@ namespace TechWriteServer.Migrations
 
             modelBuilder.Entity("TechWriteServer.Models.Blog.BlogLike", b =>
                 {
-                    b.HasOne("TechWriteServer.Models.Blog.Blog", null)
+                    b.HasOne("TechWriteServer.Models.Blog.Blog", "Blog")
                         .WithMany("BlogLikes")
                         .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TechWriteServer.Models.User.User", null)
+                    b.HasOne("TechWriteServer.Models.User.User", "User")
                         .WithMany("BlogLikes")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Blog");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("TechWriteServer.Models.Blog.Blog", b =>

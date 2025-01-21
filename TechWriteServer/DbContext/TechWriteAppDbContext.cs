@@ -12,7 +12,7 @@ public class TechWriteAppDbContext : Microsoft.EntityFrameworkCore.DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-
+     
         #region Seed Data
 
         modelBuilder.Entity<UserType>().HasData(
@@ -40,4 +40,5 @@ public class TechWriteAppDbContext : Microsoft.EntityFrameworkCore.DbContext
     public DbSet<Tag> Tags { get; set; }
     public DbSet<BlogComment> blogComments {get;set;}
     public DbSet<Blog> Blogs { get; set; }
+    public DbSet<BlogLike> BlogLikes { get; set; }
 }

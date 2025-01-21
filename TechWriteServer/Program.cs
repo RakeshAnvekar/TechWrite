@@ -86,6 +86,7 @@ builder.Services.AddSingleton<ICookieHelper, CookieHelper>();
 builder.Services.AddTransient<IBlogLogic, BlogLogic>();
 builder.Services.AddTransient<ITagLogic, TagLogic>();
 builder.Services.AddTransient<IUserLogic, UserLogic>();
+builder.Services.AddTransient<IBlogLikeLogic, BlogLikeLogic>();
 #endregion
 
 #region Repositories
@@ -95,6 +96,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IBlogCommentRepository, BlogCommentRepository>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
+builder.Services.AddScoped<IBlogLikeRepository, BlogLikeRepository>();
 
 #endregion
 

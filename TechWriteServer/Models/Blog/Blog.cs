@@ -24,5 +24,7 @@ public class Blog
     public bool? IsApproved { get; set; } = false;
     public bool? IsTranding { get; set; } = false;
     public string RejectComment { get; set; } = string.Empty;
-    public int? BlogLikes { get; set; }
+    // Navigation properties
+    public required TechWriteServer.Models.User.User User { get; set; }
+    public required IList<BlogLike> BlogLikes { get; set; }
 }

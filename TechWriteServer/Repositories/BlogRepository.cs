@@ -73,24 +73,25 @@ public class BlogRepository : IBlogRepository
     public async Task<Blog?> BlogLikeAsync(int blogId, CancellationToken cancellationToken)    {
        
 
-       var existingBlog=await _techWriteAppDbContext.Blogs.FindAsync(blogId,cancellationToken);
-        if (existingBlog != null) {
-            existingBlog.BlogLikes = existingBlog.BlogLikes +1;
-           await _techWriteAppDbContext.SaveChangesAsync(cancellationToken);           
-        }
-        return existingBlog;
+       //var existingBlog=await _techWriteAppDbContext.Blogs.FindAsync(blogId,cancellationToken);
+       // if (existingBlog != null) {
+       //     existingBlog.BlogLikes = existingBlog.BlogLikes +1;
+       //    await _techWriteAppDbContext.SaveChangesAsync(cancellationToken);           
+       // }
+        return null;
     }
 
     public async Task<Blog?> BlogDisLikeAsync(int blogId, CancellationToken cancellationToken)
     {
-        
-        var existingBlog = await _techWriteAppDbContext.Blogs.FindAsync(blogId, cancellationToken);
-        if (existingBlog != null)
-        {
-            existingBlog.BlogLikes = -1;
-            await _techWriteAppDbContext.SaveChangesAsync(cancellationToken);
-        }
-        return existingBlog;
+
+        //var existingBlog = await _techWriteAppDbContext.Blogs.FindAsync(blogId, cancellationToken);
+        //if (existingBlog != null)
+        //{
+        //    existingBlog.BlogLikes = -1;
+        //    await _techWriteAppDbContext.SaveChangesAsync(cancellationToken);
+        //}
+        //return existingBlog;
+        return null;
     }
 
     #endregion
