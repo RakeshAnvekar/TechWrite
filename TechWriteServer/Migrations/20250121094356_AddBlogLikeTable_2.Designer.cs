@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechWriteServer.DbContext;
 
@@ -11,9 +12,11 @@ using TechWriteServer.DbContext;
 namespace TechWriteServer.Migrations
 {
     [DbContext(typeof(TechWriteAppDbContext))]
-    partial class TechWriteAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250121094356_AddBlogLikeTable_2")]
+    partial class AddBlogLikeTable_2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

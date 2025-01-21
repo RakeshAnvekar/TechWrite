@@ -1,4 +1,7 @@
 ﻿@model TechWriteServer.Models.Blog.Blog
+@{
+    var loginUserId = ViewBag.LoginUserId;
+}
 @if (!string.IsNullOrEmpty(@ViewBag.LoginUserName))
 {
     <div class="likeDislikeContainer">
@@ -6,14 +9,8 @@
             <a href="javascript:void(0);" class="like-button" data-blog-id="@Model?.BlogId">
                 <img src="/Images/LikeBlog.png" style="width:30px;height:30px" />
             </a>
-            <span class="like-count">@Model?.BlogLikes</span>
-        </span>
-        <span>
-            <a href="javascript:void(0);" class="dislike-button" data-blog-id="@Model?.BlogId">
-                <img src="/Images/DislikeBlog.png" style="width:30px;height:30px" />
-            </a>
-            <span class="dislike-count">@Model?.BlogLikes</span>
-        </span>
+            <span class="like-count">@Model?.BlogLikes.Count()</span>
+        </span>       
     </div>
 }
 
@@ -28,13 +25,19 @@
 
         });
         $(".like-button").click(function () {
-            var blogId = $(this).data("blog-id");
+            debugger
+            var blogLikeRequest = {
+                BlogId: $(this).data("blog-id"),
+                UserId: '@loginUserId',               
+            };           
             var likeButton = $(this);
             var likeCountElement = likeButton.parent().find('.like-count');
             $.ajax({
-                url: '/api/BlogApi/LikeBlog/' + blogId,
-                type: 'PUT',
+                url: '/api/BlogLikeApi/UpdateBlogLike',
+                type: 'POST',
                 contentType: 'application/json',
+                data: JSON.stringify(blogLikeRequest),
+                dataType: 'json',
                 success: function (response) {
                     likeCountElement.text(response);
                 },
