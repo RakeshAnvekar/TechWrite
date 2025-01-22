@@ -60,7 +60,16 @@ public sealed class BlogLogic : IBlogLogic
     public async Task<List<Blog>?> GetAllTrandingBlogsAsync(CancellationToken cancellationToken)
     {
       var allActiveBlogs =  await _blogRepository.GetAllAsync(cancellationToken);
-      return allActiveBlogs?.Where(x => x.IsTranding==true).ToList();
+        var trendingblogs = new List<Blog>();
+        if (allActiveBlogs != null)
+        {
+            foreach (var blog in allActiveBlogs)
+            {
+                blog.User = await _userRepository.GetAsync(blog.UserId, cancellationToken);
+                trendingblogs.Add(blog);
+            }
+        }        
+      return trendingblogs?.Where(x => x.IsTranding==true).ToList();
     }
 
     public async Task ApproveBlogAsync(int blogId, CancellationToken cancellationToken)
