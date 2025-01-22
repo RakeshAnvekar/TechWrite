@@ -38,5 +38,11 @@ public class UserLogic : IUserLogic
     {       
        return await _userRepository.IsUserExistsAsync(user, cancellationToken);
     }
+
+    public async Task<string?> GetUserNameAsync(Guid userId, CancellationToken cancellationToken)
+    {
+        var user = await _userRepository.GetAsync(userId,cancellationToken);
+        return (user == null || user.UserName == null) ? null : user.UserName;
+    }
     #endregion
 }
