@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Images\\403ErrorImage.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\404PageNotFoundError.png",
+      "PackagePath": "staticwebassets\\Images\\404PageNotFoundError.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\500InternalServerError.png",
       "PackagePath": "staticwebassets\\Images\\500InternalServerError.png"
     },

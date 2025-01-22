@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PZgLi5qWSV6lof7YWOm24yxr3bZXfJGrdOdJw2mkmqo=",
+  "Hash": "txei27xphVO0xqyT3CzQpVYC+l7pikLHfCI+yoxXO/g=",
   "Source": "TechWriteServer",
   "BasePath": "_content/TechWriteServer",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\403ErrorImage.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\404PageNotFoundError.png",
+      "SourceId": "TechWriteServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "BasePath": "_content/TechWriteServer",
+      "RelativePath": "Images/404PageNotFoundError.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\404PageNotFoundError.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\500InternalServerError.png",
