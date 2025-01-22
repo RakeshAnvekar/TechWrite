@@ -26,8 +26,8 @@
         </div>
         <p>@blog.Description</p>
 
-        <span><b>Author:</b> Rakesh Vinod Anvekar</span><br/>
-        <span><b>Published Date:</b>@blog.PublishedDate.ToString("MMMM dd, yyyy hh:mm:ss tt")</span>
+        <span><b>Author:</b> @blog.User.UserName</span><br/>
+        <span><b>Published Date:</b> @blog.PublishedDate.ToString("MMMM dd, yyyy hh:mm:ss tt")</span>
             <br />
             if (blog != null)
             {

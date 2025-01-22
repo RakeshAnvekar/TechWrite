@@ -12,15 +12,17 @@ public sealed class BlogLogic : IBlogLogic
     private readonly IBlogCommentRepository _blogCommentRepository;
     private readonly ITagRepository _tagRepository;
     private readonly IBlogLikeRepository _blogLikeRepository;
+    private readonly IUserRepository _userRepository;
     #endregion
 
     #region Constructors
-    public BlogLogic(IBlogRepository blogRepository, IBlogCommentRepository blogCommentRepository, ITagRepository tagRepository, IBlogLikeRepository blogLikeRepository)
+    public BlogLogic(IBlogRepository blogRepository, IBlogCommentRepository blogCommentRepository, ITagRepository tagRepository, IBlogLikeRepository blogLikeRepository, IUserRepository userRepository)
     {
         _blogRepository = blogRepository;
         _blogCommentRepository = blogCommentRepository;
         _tagRepository = tagRepository;
         _blogLikeRepository = blogLikeRepository;
+        _userRepository = userRepository;
     }
        
     #endregion
@@ -39,6 +41,8 @@ public sealed class BlogLogic : IBlogLogic
                 blog.BlogLikes= await _blogLikeRepository.GetAsync(blog.BlogId, cancellationToken);
                 var tagData= await _tagRepository.GetAsync(blog.TagId,cancellationToken);
                 blog.TagName = tagData?.TagName;
+                blog.User = await _userRepository.GetAsync(blog.UserId, cancellationToken);
+               
             }
         }
         blogViewData.Tags= await _tagRepository.GetAllAsync(cancellationToken);        

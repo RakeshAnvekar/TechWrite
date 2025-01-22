@@ -19,7 +19,7 @@ public interface IUserRepository
     /// <param name="userId">The identificaton number of User.></param>
     /// <param name="cancellationToken"> A token to observe while waiting for the task to complete. It allows the operation to be cancelled.</param>
     /// <returns>A task representing the asynchronous operation, which contains single item of type <see cref="User"/></returns>
-    public Task<User?> GetAsync(Guid userId, CancellationToken cancellationToken);
+    public Task<User?> GetAsync(Guid? userId, CancellationToken cancellationToken);
 
     /// <summary>
     /// Creates a new user in the data source asynchronously.
@@ -59,8 +59,9 @@ public interface IUserRepository
     /// <summary>
     /// </summary>
     /// <param name="user"></param>
-    /// <param name="cancellationToken"></param>
+    /// <param name="cancellationToken">A token to monitor for cancellation requests, allowing the operation to be cancelled.</param>
     /// <returns></returns>
     public Task<User?> IsUserExistsAsync(User user, CancellationToken cancellationToken);
+    
     #endregion
 }

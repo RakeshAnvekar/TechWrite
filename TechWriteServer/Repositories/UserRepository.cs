@@ -30,7 +30,7 @@ public class UserRepository:IUserRepository
         return await _techWriteAppDbContext.Users.ToListAsync(cancellationToken);
     }
 
-    public async Task<User?> GetAsync(Guid userId, CancellationToken cancellationToken)
+    public async Task<User?> GetAsync(Guid? userId, CancellationToken cancellationToken)
     {
         return await _techWriteAppDbContext.Users.FirstOrDefaultAsync(user=>user.UserId == userId,cancellationToken);
     }
@@ -94,6 +94,7 @@ public class UserRepository:IUserRepository
         }
         return null;
     }
+
 
     #endregion
 }
