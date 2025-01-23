@@ -29,7 +29,7 @@ namespace TechWriteServer.Controllers.Api.Controllers
         public async Task<IActionResult> Post([FromBody] Blog blog)
         {
             try
-            {
+            {               
               var result= await _blogLogic.CreateNewBlog(blog,HttpContext.RequestAborted);
                 return Ok(result);
 

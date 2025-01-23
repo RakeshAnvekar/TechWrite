@@ -12,7 +12,7 @@
                 <option value="@tag.TagId">@tag.TagName</option>
             }
         }
-    </select>
+    </select>    
     <br />
 
     <!-- Container for Form Fields -->
@@ -20,7 +20,7 @@
         <!-- Row for Blog Title -->
         <div class="row mb-3">
             <div class="col-12 col-md-8">
-                @Html.TextAreaFor(model => model.blog.Title, new { @id = "blogTitle", @class = "form-control", @rows = 2, @placeholder = "Enter Blog Title..." })
+                @Html.TextAreaFor(model => model.blog.Title, new { @id = "blogTitle", @class = "form-control", @rows = 2, @placeholder = "Enter Blog Title..." })                
             </div>
         </div>
 
@@ -30,7 +30,7 @@
         <div class="row mb-3">
             <div class="col-12 col-md-8">
                 @Html.TextAreaFor(model => model.blog.Description, new { @id = "blogDescription", @class = "form-control", @rows = 4, @placeholder = "Enter Blog Description..." })
-            </div>
+             </div>
 
             <!-- Publish Button next to Description -->
             <div class="col-12 col-md-4 d-flex align-items-end">
@@ -47,19 +47,20 @@
 
 
 
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
         $("#btnPublishBlog").click(function () {
-            $('#btnPublishBlog').hide();
+
             var blogData = {
                 Title: $("#blogTitle").val(),
                 Description: $("#blogDescription").val(),
                 UserId: '@ViewBag.LoginUserId',
                 TagId: $("#selectTagId").val(),
             };
-
-            $.ajax({
+                if(validate()){
+                $.ajax({
                 url: 'api/BlogApi/CreateNew',
                 type: 'POST',
                 contentType: 'application/json',
@@ -72,7 +73,7 @@
                         setTimeout(function () {
                             $('#response').html('');
                             $('#btnPublishBlog').show();
-                        }, 3000);
+                        }, 4000);
                         $('#blogTitle').val('');
                         $('#blogDescription').val('');
                         $('#userId').val('');
@@ -88,9 +89,38 @@
                     $('#btnPublishBlog').show();
                 }
             });
-        });
+            }
 
-    });
+
+                function validate() {
+                            $('#blogDescription').css('border-color', '#ced4da');
+                                 $('#blogTitle').css('border-color', '#ced4da');
+                                     $('#selectTagId').css('border-color', '#ced4da');
+                             // Check if a tag is selected
+                                if ($("#selectTagId").val() === "") {
+                                           $('#selectTagId').css('border-color', 'red');
+                                    return false;
+                                }
+                            // Check if the title is empty
+                            if ($("#blogTitle").val().trim() === "") {
+                                   $('#blogTitle').css('border-color', 'red');
+                                return false;
+                            }
+
+                            // Check if the description is empty
+                            if ($("#blogDescription").val().trim() === "") {
+                                        $('#blogDescription').css('border-color', 'red');
+                                return false;
+                            }
+
+
+                        // If all validations pass
+                        return true;
+    }
+
+  });
+
+});
 </script>
 <style>
 </style>
