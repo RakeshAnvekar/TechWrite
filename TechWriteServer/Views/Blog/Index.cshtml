@@ -2,8 +2,6 @@
 @{
     Layout = "_Layout";
 }
-
-<span>
     @if (ViewBag.UserLoggedInStatus!=null)
     {
         @await Html.PartialAsync("_NewBlogDetailsPartial", Model)
