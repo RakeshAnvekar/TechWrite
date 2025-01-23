@@ -9,7 +9,7 @@
             <a href="javascript:void(0);" class="like-button" data-blog-id="@Model?.BlogId">
                 <img src="/Images/LikeBlog.png" style="width:30px;height:30px" />
             </a>
-            <span class="like-count">@Model?.BlogLikes.Count()</span>
+            <span class="like-count">@Model?.BlogLikes?.Count()</span>
         </span>       
     </div>
 }

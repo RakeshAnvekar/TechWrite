@@ -6,13 +6,10 @@
 <span>
     @if (ViewBag.UserLoggedInStatus!=null)
     {
-        <button class="btn btn-dark text-white" id="btnCreateNewBlog" type="submit">Create New</button>
-
+        @await Html.PartialAsync("_NewBlogDetailsPartial", Model)
     }     
 <br />
-<div id="createNewBlogContainer" style="display:none">
-    @await Html.PartialAsync("_NewBlogDetailsPartial",Model)  
-</div>
+
   <!-- Response Placeholder -->
     <div id="response"></div> 
 <br/>
@@ -47,12 +44,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
    
      <script>
-    $(document).ready(function () {
-        $("#btnCreateNewBlog").click(function () {
-            $('#createNewBlogContainer').toggle();
-             $('#response').html('<p></p>');
-                   
-        });
+    $(document).ready(function () {       
             $(".like-button").click(function () {
                 var blogId = $(this).data("blog-id");
                 var likeButton = $(this);

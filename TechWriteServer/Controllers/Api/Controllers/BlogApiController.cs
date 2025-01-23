@@ -2,11 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using TechWriteServer.BusinessLogics.Interfaces;
 using TechWriteServer.Models.Blog;
-using TechWriteServer.Views.Blog;
 
 namespace TechWriteServer.Controllers.Api.Controllers
 {
-   
+
     [Route("api/[controller]")]
     [ApiController]
     public class BlogApiController : ControllerBase
@@ -26,7 +25,7 @@ namespace TechWriteServer.Controllers.Api.Controllers
 
         #region Methods
         [Authorize(Roles = "Admin,User")]
-        [HttpPost("CreateNewBlog")]
+        [HttpPost("CreateNew")]
         public async Task<IActionResult> Post([FromBody] Blog blog)
         {
             try
