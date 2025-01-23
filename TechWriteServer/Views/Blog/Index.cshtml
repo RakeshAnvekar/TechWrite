@@ -2,6 +2,7 @@
 @{
     Layout = "_Layout";
 }
+<<<<<<< Updated upstream
 
 <span>
     @if (ViewBag.UserLoggedInStatus!=null)
@@ -9,16 +10,23 @@
         <button class="btn btn-dark text-white" id="btnCreateNewBlog" type="submit">Create New</button>
 
     }     
+=======
+>>>>>>> Stashed changes
 <br />
-<div id="createNewBlogContainer" style="display:none">
-    @await Html.PartialAsync("_NewBlogDetailsPartial",Model)  
-</div>
-  <!-- Response Placeholder -->
-    <div id="response"></div> 
-<br/>
-@if (Model!=null && Model.Blogs?.Count >0 )
+
+@if (!string.IsNullOrEmpty(@ViewBag.LoginUserName))
 {
-    @foreach (var blog in Model.Blogs.Where(x=>x.IsActive==true && x.IsApproved==true))
+    @await Html.PartialAsync("_NewBlogDetailsPartial", Model)
+}
+
+
+<!-- Response Placeholder -->
+<div id="response"></div>
+<br />
+
+@if (Model != null && Model.Blogs?.Count > 0)
+{
+    @foreach (var blog in Model.Blogs.Where(x => x.IsActive == true && x.IsApproved == true))
     {
         <h4>@blog.Title</h4>
         <div class="tag-card">
@@ -26,53 +34,53 @@
         </div>
         <p>@blog.Description</p>
 
-        <span><b>Author:</b> @blog.User.UserName</span><br/>
-        <span><b>Published Date:</b> @blog.PublishedDate.ToString("MMMM dd, yyyy hh:mm:ss tt")</span>
-            <br />
-            if (blog != null)
-            {
-                @await Html.PartialAsync("_BlogSentimentsPartial", blog)
-            }       
-           
-                    
-            <br />
-        @if (Model?.BlogComments?.Count>0)
+        <span><b>Author:</b> @blog?.User?.UserName</span>
+        <br />
+        <span><b>Published Date:</b> @blog?.PublishedDate.ToString("MMMM dd, yyyy hh:mm:ss tt")</span>
+        <br />
+
+        @if (blog != null)
         {
-            @await Html.PartialAsync("_BlogCommentsPartial", Model)
+            @await Html.PartialAsync("_BlogSentimentsPartial", blog)
         }
-        
+
+        <br />
+
+        @if (Model?.BlogComments?.Count > 0)
+        {
+            @await Html.PartialAsync("_BlogCommentsPartial", blog)
+        }
     }
-}    
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
-   
-     <script>
+}
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
     $(document).ready(function () {
-        $("#btnCreateNewBlog").click(function () {
-            $('#createNewBlogContainer').toggle();
-             $('#response').html('<p></p>');
-                   
-        });
-            $(".like-button").click(function () {
-                var blogId = $(this).data("blog-id");
-                var likeButton = $(this);
-                var likeCountElement = likeButton.parent().find('.like-count');
-                $.ajax({
-                    url: '/api/BlogApi/LikeBlog/' + blogId,
-                    type: 'PUT',
-                    contentType: 'application/json',
-                    success: function (response) {
-                        likeCountElement.text(response);
-                    },
-                    error: function (error) {
-                        console.error('Error liking the blog:', error);
-                    }
-                });
+        $(".like-button").click(function () {
+            var blogId = $(this).data("blog-id");
+            var likeButton = $(this);
+            var likeCountElement = likeButton.parent().find('.like-count');
+
+            $.ajax({
+                url: '/api/BlogApi/LikeBlog/' + blogId,
+                type: 'PUT',
+                contentType: 'application/json',
+                success: function (response) {
+                    likeCountElement.text(response);
+                },
+                error: function (error) {
+                    console.error('Error liking the blog:', error);
+                    alert('There was an issue with liking the blog. Please try again later.');
+                }
             });
         });
-     </script>
+    });
+</script>
 
-     <style>
+<style>
     .tag-card {
         display: inline-block;
         padding: 5px 10px;
@@ -82,8 +90,17 @@
         font-size: 12px;
         margin-top: 10px;
     }
-     </style>
-       
-   
 
+    .like-button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
 
+        .like-button:hover {
+            background-color: #218838;
+        }
+</style>

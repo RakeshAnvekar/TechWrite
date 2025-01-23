@@ -26,7 +26,7 @@ namespace TechWriteServer.Controllers.Api.Controllers
 
         #region Methods
         [Authorize(Roles = "Admin,User")]
-        [HttpPost("CreateNewBlog")]
+        [HttpPost("CreateNew")]
         public async Task<IActionResult> Post([FromBody] Blog blog)
         {
             try

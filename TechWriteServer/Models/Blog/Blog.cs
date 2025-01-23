@@ -25,6 +25,6 @@ public class Blog
     public bool? IsTranding { get; set; } = false;
     public string RejectComment { get; set; } = string.Empty;
     // Navigation properties
-    public required TechWriteServer.Models.User.User User { get; set; }
-    public required IList<BlogLike> BlogLikes { get; set; }
+    public TechWriteServer.Models.User.User? User { get; set; }
+    public  IList<BlogLike>? BlogLikes { get; set; }
 }

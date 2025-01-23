@@ -6,7 +6,7 @@
 {
     <div class="likeDislikeContainer">
         <span>
-            <a href="javascript:void(0);" class="like-button" data-blog-id="@Model?.BlogId">
+            <a href="javascript:void(0);" class="likeSentiment-button" data-blog-id="@Model?.BlogId">
                 <img src="/Images/LikeBlog.png" style="width:30px;height:30px" />
             </a>
             <span class="like-count">@Model?.BlogLikes.Count()</span>
@@ -18,14 +18,9 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    $(document).ready(function () {
-        $("#btnCreateNewBlog").click(function () {
-            $('#createNewBlogContainer').toggle();
-            $('#response').html('<p></p>');
-
-        });
-        $(".like-button").click(function () {
-            debugger
+    $(document).ready(function () {       
+        $(".likeSentiment-button").click(function () {
+            
             var blogLikeRequest = {
                 BlogId: $(this).data("blog-id"),
                 UserId: '@loginUserId',               

@@ -1,31 +1,57 @@
 ﻿@model TechWriteServer.ViewModels.BlogViewModel
 <div>
     <h5>Create New Blog</h5>
-    <select class="tags" id="selectTagId">
+
+    <!-- Tag Dropdown -->
+    <select class="tags form-control" id="selectTagId">
         <option value="">Select a Tag...</option>
-        @if (Model != null && Model.Tags!=null)
+        @if (Model != null && Model.Tags != null)
         {
             @foreach (var tag in Model.Tags)
             {
-                <option value=@tag.TagId>@tag.TagName</option>
+                <option value="@tag.TagId">@tag.TagName</option>
             }
         }
-        
-    </select><br/>
-    @Html.TextAreaFor(model => model.blog.Title, new { @id = "blogTitle", @rows = 2, @cols = 80, @placeholder = "Enter Blog Title..."})
-    @Html.TextAreaFor(model => model.blog.Description, new { @id = "blogDescription", @rows = 4, @cols = 80, @placeholder = "Enter Blog Description..." })<br />
-    @Html.HiddenFor(model => model.blog.UserId, new { @id = "userId"})
-   <span>
-        <b>@DateTime.UtcNow</b>
-        <button class="btn btn-dark text-white" style="margin-left:370px" id="btnPublishBlog" type="button">Publish</button>
-    </span>    
+    </select>
+    <br />
+
+    <!-- Container for Form Fields -->
+    <div class="container">
+        <!-- Row for Blog Title -->
+        <div class="row mb-3">
+            <div class="col-12 col-md-8">
+                @Html.TextAreaFor(model => model.blog.Title, new { @id = "blogTitle", @class = "form-control", @rows = 2, @placeholder = "Enter Blog Title..." })
+            </div>
+        </div>
+
+        <br />
+
+        <!-- Row for Blog Description and Publish Button (side by side) -->
+        <div class="row mb-3">
+            <div class="col-12 col-md-8">
+                @Html.TextAreaFor(model => model.blog.Description, new { @id = "blogDescription", @class = "form-control", @rows = 4, @placeholder = "Enter Blog Description..." })
+            </div>
+
+            <!-- Publish Button next to Description -->
+            <div class="col-12 col-md-4 d-flex align-items-end">
+                <button class="btn btn-dark text-white w-100" id="btnPublishBlog" type="button">Publish</button>
+            </div>
+        </div>
+
+        <br />
+
+        <!-- Hidden UserId Field -->
+        @Html.HiddenFor(model => model.blog.UserId, new { @id = "userId" })
+    </div>
 </div>
+
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
         $("#btnPublishBlog").click(function () {
+            $('#btnPublishBlog').hide();
             var blogData = {
                 Title: $("#blogTitle").val(),
                 Description: $("#blogDescription").val(),
@@ -34,18 +60,22 @@
             };
 
              $.ajax({
-                url: 'api/BlogApi/CreateNewBlog',  
+                url: 'api/BlogApi/CreateNew',  
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(blogData),
                 dataType: 'json', 
                 success: function (response) {
+                    $('#btnPublishBlog').show();
                     if (response.blogId) {
-                    $('#response').html('<p Style="color:darksalmon">Your blog has been successfully created and is currently awaiting admin approval.<br/> We will notify you once it has been approved.!</p><br/>Thank You...');
-                    $('#blogTitle').val('');
+                    $('#response').html('<p Style="color:darksalmon">Your blog has been successfully created and is currently awaiting admin approval.<br/> We will notify you once it has been approved.!</p>');
+                        setTimeout(function () {
+                            $('#response').html('');
+                            $('#btnPublishBlog').show();
+                        }, 3000); 
+                        $('#blogTitle').val('');
                     $('#blogDescription').val('');
                     $('#userId').val('');
-                    $('#createNewBlogContainer').hide();
                     } else {
                         $('#response').html('<p>Error: ' + response.message + '</p>');                       
                     }
@@ -55,10 +85,10 @@
                     $('#blogTitle').val('');
                     $('#blogDescription').val('');
                     $('#userId').val('');
+                    $('#btnPublishBlog').show();
                 }
             });
         });
-       
        
     });
 </script>

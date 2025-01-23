@@ -25,7 +25,7 @@ public class User
     public bool? isActive { get; set; } = true;
     public string? ProfilePicture { get; set; }
     public bool IsUserLoggedIn { get; set;} = false;
-    public ICollection<TechWriteServer.Models.Blog.Blog> Blogs { get; set; }  // Blogs written by the user
-    public ICollection<BlogLike> BlogLikes { get; set; }  // Blogs liked by the user
+    public required ICollection<TechWriteServer.Models.Blog.Blog> Blogs { get; set; }  // Blogs written by the user
+    public required ICollection<BlogLike> BlogLikes { get; set; }  // Blogs liked by the user
 }
 
