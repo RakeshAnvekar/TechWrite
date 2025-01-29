@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "txei27xphVO0xqyT3CzQpVYC+l7pikLHfCI+yoxXO/g=",
+  "Hash": "2uqnhqMaIoH7BCrJp123OXmU/ApSfzireDKLoAPA49Y=",
   "Source": "TechWriteServer",
   "BasePath": "_content/TechWriteServer",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TechWriteServer\\wwwroot",
       "Source": "TechWriteServer",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechWriteServer.styles.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechWriteServer.styles.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "TechWriteServer.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechWriteServer.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechWriteServer.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechWriteServer.bundle.scp.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechWriteServer.bundle.scp.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "TechWriteServer.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechWriteServer.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechWriteServer.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\css\\site.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\favicon.ico",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\403ErrorImage.png",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\403ErrorImage.png",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/403ErrorImage.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\403ErrorImage.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\404PageNotFoundError.png",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\404PageNotFoundError.png",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/404PageNotFoundError.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\404PageNotFoundError.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\500InternalServerError.png",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\500InternalServerError.png",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/500InternalServerError.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\500InternalServerError.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\DislikeBlog.png",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\DislikeBlog.png",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/DislikeBlog.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DislikeBlog.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\Dislike-icon.jpg",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\Dislike-icon.jpg",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/Dislike-icon.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Dislike-icon.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\LikeBlog.png",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\LikeBlog.png",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/LikeBlog.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\LikeBlog.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\like-icon.png",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\like-icon.png",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/like-icon.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\like-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\RrightMark.png",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\RrightMark.png",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/RrightMark.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\RrightMark.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\Images\\Trending.png",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\Images\\Trending.png",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "Images/Trending.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Trending.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\js\\site.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TechWriteServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWriteServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TechWrite\\TechWrite\\TechWriteServer\\wwwroot\\",
       "BasePath": "_content/TechWriteServer",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

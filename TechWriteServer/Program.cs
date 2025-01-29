@@ -12,6 +12,7 @@ using TechWriteServer.DbContext;
 using TechWriteServer.Enums;
 using TechWriteServer.Helpers;
 using TechWriteServer.Helpers.Interfaces;
+using TechWriteServer.MiddleWares;
 using TechWriteServer.Models.User;
 using TechWriteServer.Repositories;
 using TechWriteServer.Repositories.Interfaces;
@@ -21,7 +22,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminRole", policy => policy.RequireRole(UserTypes.Admin.ToString())); // Admin role
@@ -113,6 +113,15 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+var allowedMethods = new[] { "GET", "POST", "PUT", "DELETE" };
+#region MiddleWares
+app.Use(async (context,next) =>
+{
+    var middleWare= new MethodAllowedMiddleWare(next,allowedMethods);
+   await middleWare.InvokeAsyc(context);
+});
+app.UseMiddleware<HealthCheckMiddleWare>();
+#endregion
 app.UseStatusCodePagesWithReExecute("/Error/HandleError", "?statusCode={0}");
 app.UseHttpsRedirection();
 app.UseStaticFiles();

@@ -17,91 +17,91 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TechWriteServer
 build_property.RootNamespace = TechWriteServer
-build_property.ProjectDir = C:\Users\Admin\source\repos\TechWrite\TechWriteServer\
+build_property.ProjectDir = C:\Users\Admin\source\repos\TechWrite\TechWrite\TechWriteServer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\TechWrite\TechWriteServer
+build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\TechWrite\TechWrite\TechWriteServer
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Admin/Index.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Blog/Index.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Blog/TrandingBlogs.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Blog/TrandingBlogs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xUcmFuZGluZ0Jsb2dzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Common/_CountComponent.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Common/_CountComponent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbW9uXF9Db3VudENvbXBvbmVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Error/Error.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Error/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Home/Index.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Home/Privacy.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Shared/Error.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Shared/_BlogCommentsPartial.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Shared/_BlogCommentsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CbG9nQ29tbWVudHNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Shared/_BlogSentimentsPartial.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Shared/_BlogSentimentsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CbG9nU2VudGltZW50c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Shared/_NewBlogDetailsPartial.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Shared/_NewBlogDetailsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OZXdCbG9nRGV0YWlsc1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Tag/Index.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Tag/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/User/Login.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/User/OnRegister.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/User/OnRegister.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxPblJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/User/Register.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/_ViewImports.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/_ViewStart.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-w9aj75t0gq
 
-[C:/Users/Admin/source/repos/TechWrite/TechWriteServer/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/Admin/source/repos/TechWrite/TechWrite/TechWriteServer/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-62ki831xib
