@@ -28,6 +28,8 @@ The application uses the **Repository Pattern** for data access and **Dependency
 - **System.Security.Cryptography**: For encryption and secure handling of sensitive data.
 - **Azure** :Azure App service,Azure sql database.
 - **Logging** :Serilog (console,files).
+- **CI/CD** :Git Action.
+
 
 ## Features
 - **User Authentication**: Secure user login using JWT Tokens.
