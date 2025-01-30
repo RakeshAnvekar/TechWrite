@@ -27,6 +27,7 @@ The application uses the **Repository Pattern** for data access and **Dependency
 - **Dependency Injection**: To manage the application's dependencies and improve code modularity and testability.
 - **System.Security.Cryptography**: For encryption and secure handling of sensitive data.
 - **Azure** :Azure App service,Azure sql database.
+- **Logging** :Serilog (console,files).
 
 ## Features
 - **User Authentication**: Secure user login using JWT Tokens.
