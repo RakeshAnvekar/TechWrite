@@ -3,6 +3,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System.Security.Claims;
 using System.Text;
 using TechWriteServer.Autentication;
@@ -28,6 +29,14 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("UserRole", policy => policy.RequireRole(UserTypes.User.ToString()));   // User role
     options.AddPolicy("VisitorRole", policy => policy.RequireRole(UserTypes.Visitor.ToString())); // Visitor role
 });
+#region Serilog Integration
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom
+    .Configuration(builder.Configuration)
+    .CreateLogger();
+builder.Host.UseSerilog();
+
+#endregion
 #region Configure JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -127,6 +136,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 
 app.UseAuthentication();
 app.UseAuthorization();
