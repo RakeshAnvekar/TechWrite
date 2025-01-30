@@ -14,6 +14,7 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/logs/
 
 # VS Code settings
 .vscode/
@@ -113,3 +114,4 @@ yarn-error.log*
 /TechWriteServer/obj/Debug/net8.0/TechWriteServer.dll
 /TechWriteServer/obj/Debug/net8.0/TechWriteServer.pdb
 /TechWriteServer/obj/Debug/net8.0/TechWriteServer.sourcelink.json
+/TechWriteServer/logs
