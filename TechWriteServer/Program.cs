@@ -112,6 +112,10 @@ builder.Services.AddScoped<IBlogLikeRepository, BlogLikeRepository>();
 #region Custom Auth
 builder.Services.AddScoped<ITokenGenerator, TokenGenerator>();
 #endregion
+
+#region InMemory Cache
+builder.Services.AddMemoryCache();
+#endregion
 var app = builder.Build();
 
 builder.Services.AddAuthorization();
