@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Reflection.Metadata;
 using System.Security.Claims;
 using System.Text;
 using TechWriteServer.Autentication;
@@ -41,7 +42,11 @@ builder.Host.UseSerilog();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
-                     options.Events = new JwtBearerEvents
+                    //OnAuthenticationFailed:Handle authentication failures.
+                    //OnTokenValidated:
+                    //OnRequestReceived: Inspect the HTTP request before any authentication happens.
+                    //OnForbidden: Handle cases where the user is authenticated but not authorized.
+                    options.Events = new JwtBearerEvents
                     {
                          //This event is fired every time a request is received by the server
                          OnMessageReceived = context =>
@@ -57,6 +62,23 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
                          
                      };
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnForbidden = context =>
+                        {
+                            context.Response.Headers.Add("Custom-Forbidden-Message", "You don't have access to this resource");
+                            return Task.CompletedTask;
+                        }
+                    };
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnChallenge = context =>
+                        {
+                            context.Response.Headers.Add("Custom-Header", "Token required");
+                            return Task.CompletedTask;
+                        }
+                    };
+
                     options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                     {
                         ValidateIssuer = true,

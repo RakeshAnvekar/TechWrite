@@ -27,6 +27,7 @@ public sealed class TokenGenerator : ITokenGenerator
     #region Methods
     public async Task<string?> GenerateTokenAsync(User user, CancellationToken cancellationToken)
     {
+        //Claims are pieces of information about the user that are stored in the token.
         var claims = new[]
        {
             new Claim(JwtRegisteredClaimNames.Sub,_configuration["Jwt:Subject"]),
