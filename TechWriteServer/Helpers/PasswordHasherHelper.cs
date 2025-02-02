@@ -16,17 +16,19 @@ public sealed class PasswordHasherHelper : IPasswordHasherHelper
     #region Methods
     public async Task<string> HashPasswordAsync(string password)
     {
+        //salt is a random value used to add an additional layer of security to password hashing.
+        //It helps prevent attacks like rainbow table attacks by ensuring that
+        //even if two users have the same password, their hashed values will be different
         var salt = new byte[16];
         using (var rng = new RNGCryptoServiceProvider())
         {
             rng.GetBytes(salt);
         }
-
         var hash = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-            password,
-            salt,
-            KeyDerivationPrf.HMACSHA256,
-            10000,
+        password,
+        salt,
+        KeyDerivationPrf.HMACSHA256,
+        10000,//iteration count.
             32));
         return await Task.FromResult(Convert.ToBase64String(salt.Concat(Encoding.UTF8.GetBytes(hash)).ToArray()));       
     }

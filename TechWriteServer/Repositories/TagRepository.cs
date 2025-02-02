@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using TechWriteServer.DbContext;
 using TechWriteServer.Models.Tag;
 using TechWriteServer.Repositories.Interfaces;
@@ -9,12 +10,15 @@ namespace TechWriteServer.Repositories
     {
         #region Private Readonly Properties
         private readonly TechWriteAppDbContext _techWriteAppDbContext;
+        private readonly IMemoryCache _memoryCache;
+        const string tagCacheKey = "TagCacheKey";
         #endregion
 
         #region Constructors
-        public TagRepository(TechWriteAppDbContext techWriteAppDbContext)
+        public TagRepository(TechWriteAppDbContext techWriteAppDbContext, IMemoryCache memoryCache)
         {
             _techWriteAppDbContext = techWriteAppDbContext;
+            _memoryCache = memoryCache;
         }
 
 
@@ -38,12 +42,22 @@ namespace TechWriteServer.Repositories
             {
                 _techWriteAppDbContext.Tags.Remove(existingTag);
                await _techWriteAppDbContext.SaveChangesAsync(cancellationToken);
+                DeleteTagsDataFromCache();
             }
         }
 
         public async Task<List<Tag>?> GetAllAsync(CancellationToken cancellationToken)
         {
-            return await _techWriteAppDbContext.Tags.ToListAsync(cancellationToken);
+           
+            // Try to get tags from the cache
+            if (!_memoryCache.TryGetValue(tagCacheKey, out List<Tag>? tags))
+            {
+                  tags = await _techWriteAppDbContext.Tags.ToListAsync(cancellationToken);
+                _memoryCache.Set(tagCacheKey, tags);
+            }
+
+            // Return the tags (either from cache or DB)
+            return tags;
         }
 
         public async Task<Tag?> GetAsync(int tagId, CancellationToken cancellationToken)
@@ -61,8 +75,14 @@ namespace TechWriteServer.Repositories
             if (existingTag != null) { 
             existingTag.TagName=tag.TagName;
                await _techWriteAppDbContext.SaveChangesAsync(cancellationToken);
+                DeleteTagsDataFromCache();
             }
             return null;
+        }
+
+        private void DeleteTagsDataFromCache()
+        {
+            _memoryCache.Remove(tagCacheKey);
         }
         #endregion
     }
